@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dOpt_perfil"
+            android:icon="@drawable/ic_user"
+            android:title="Perfil" />
+
+        <item
+            android:id="@+id/dOption2"
+            android:icon="@drawable/ic_action_name"
+            android:title="Buscar" />
+
+        <item android:title="Portafolio"
+            android:icon="@drawable/ic_portafolio">
+            <menu>
+                <group>
+                    <item
+                        android:id="@+id/dOption3"
+                        android:title="Datos Personales" />
+                    <item
+                        android:id="@+id/dOption4"
+                        android:title="Curriculum" />
+                </group>
+            </menu>
+        </item>
+    </group>
+</menu>

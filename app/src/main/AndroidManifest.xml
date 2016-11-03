@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.emplonic.brothersapp.emplonic">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/imagen"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main_Drawer_Emplofind" />
+        <activity android:name=".Main_Drawer_Empleador"></activity>
+    </application>
+
+</manifest>
