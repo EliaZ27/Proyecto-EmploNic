@@ -44,13 +44,16 @@ public class Main_Drawer_Empleador extends AppCompatActivity implements Navigati
                 Snackbar.make(drawerLayout,"Option 1", Snackbar.LENGTH_LONG).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
-            case R.id.dOption2:
+            case R.id.dOpt_Buscar:
                 Snackbar.make(drawerLayout,"Option 2", Snackbar.LENGTH_LONG).show();
                 return true;
-            case R.id.dOption3:
+            case R.id.dOpt_PublicrEmpleo:
                 Snackbar.make(drawerLayout,"Option 3", Snackbar.LENGTH_LONG).show();
                 return true;
-            case R.id.dOption4:
+            case R.id.dOpt_DatosP:
+                Snackbar.make(drawerLayout,"Option 4", Snackbar.LENGTH_LONG).show();
+                return true;
+            case R.id.dOpt_Curriculum:
                 Snackbar.make(drawerLayout,"Option 4", Snackbar.LENGTH_LONG).show();
                 return true;
             default:

@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Main_Drawer_Emplofind" />
-        <activity android:name=".Main_Drawer_Empleador"></activity>
+        <activity android:name=".Main_Drawer_Empleador" />
+        <activity android:name=".Main_Drawer_Pymes"></activity>
     </application>
 
 </manifest>
