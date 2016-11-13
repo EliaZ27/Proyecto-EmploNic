@@ -1,5 +1,6 @@
 package com.emplonic.brothersapp.emplonic;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
@@ -43,17 +44,21 @@ public class Main_Drawer_Emplofind extends AppCompatActivity
         Log.d(TAG, "onOptionsItemSelected: " + item.getItemId());
         switch (item.getItemId()){
             case R.id.dOpt_perfil:
-                Snackbar.make(drawerLayout,"Option 1", Snackbar.LENGTH_LONG).show();
+                Intent opc1 = new Intent(Main_Drawer_Emplofind.this, Main_perfil.class);
+                startActivity(opc1);
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
             case R.id.dOption2:
-                Snackbar.make(drawerLayout,"Option 2", Snackbar.LENGTH_LONG).show();
+                Intent opc2 = new Intent(Main_Drawer_Emplofind.this, Main_buscar.class);
+                startActivity(opc2);
                 return true;
             case R.id.dOption3:
-                Snackbar.make(drawerLayout,"Option 3", Snackbar.LENGTH_LONG).show();
+                Intent opc3 = new Intent(Main_Drawer_Emplofind.this, Main_Dt_Personales.class);
+                startActivity(opc3);
                 return true;
             case R.id.dOption4:
-                Snackbar.make(drawerLayout,"Option 4", Snackbar.LENGTH_LONG).show();
+                Intent opc4 = new Intent(Main_Drawer_Emplofind.this, Main_Curriculum.class);
+                startActivity(opc4);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

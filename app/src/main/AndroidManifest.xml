@@ -18,7 +18,11 @@
         <activity android:name=".Main_Drawer_Emplofind" />
         <activity android:name=".Main_Drawer_Empleador" />
         <activity android:name=".Main_Drawer_Pymes" />
-        <activity android:name=".Main_Register"></activity>
+        <activity android:name=".Main_Register" />
+        <activity android:name=".Main_buscar" />
+        <activity android:name=".Main_perfil" />
+        <activity android:name=".Main_Dt_Personales" />
+        <activity android:name=".Main_Curriculum"></activity>
     </application>
 
 </manifest>
