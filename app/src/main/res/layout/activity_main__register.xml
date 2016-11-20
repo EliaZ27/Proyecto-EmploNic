@@ -11,6 +11,10 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.emplonic.brothersapp.emplonic.Main_Register">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,35 +22,6 @@
         android:orientation="vertical"
         android:padding="10dp">
 
-    <TextView
-        android:layout_marginTop="10dp"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="E-Mail" />
-
-
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="5dp"
-        android:singleLine="true"
-        android:inputType="textEmailAddress"
-        android:id="@+id/user"/>
-
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Password"/>
-
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:password="true"
-        android:singleLine="true"
-        android:id="@+id/pass"/>
 
         <TextView
             android:layout_marginTop="10dp"
@@ -80,6 +55,38 @@
             android:inputType="textEmailAddress"
             android:id="@+id/apellido"/>
 
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="E-Mail" />
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
+        android:id="@+id/user"/>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:password="true"
+        android:singleLine="true"
+        android:id="@+id/pass"/>
+
+
+
         <TextView
             android:layout_marginTop="10dp"
             android:layout_width="fill_parent"
@@ -96,6 +103,36 @@
             android:inputType="textEmailAddress"
             android:id="@+id/Desempeña"/>
 
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Direccion" />
+
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:id="@+id/Direccion"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Profeccion" />
+
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:id="@+id/profeccion"/>
+
 
     <Button
         android:layout_width="fill_parent"
@@ -105,5 +142,7 @@
         android:text="Registrate"/>
 
     </LinearLayout>
+
+    </ScrollView>
 
 </RelativeLayout>

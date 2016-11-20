@@ -10,14 +10,20 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity{
 
     Button mbtn;
-    Button btn;
+    Button btnRegistrate;
+    Button btnpymes;
+    Button btnempleador;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mbtn = (Button) findViewById(R.id.btnLogin);
-        btn = (Button) findViewById(R.id.btnRegistrate);
+        btnRegistrate = (Button) findViewById(R.id.btnRegistrate);
+        btnpymes = (Button) findViewById(R.id.btnPymes);
+        btnempleador = (Button) findViewById(R.id.btnempleador);
         mbtn.setOnClickListener(new  View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -26,14 +32,29 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
-        btn.setOnClickListener( new View.OnClickListener(){
+        btnRegistrate.setOnClickListener( new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Main_Register.class);
+                Intent intent = new Intent(MainActivity.this, Main_Cuentas.class);
                 startActivity(intent);
             }
         });
 
+        btnpymes.setOnClickListener( new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Main_Drawer_Pymes.class);
+                startActivity(intent);
+            }
+        });
+
+        btnempleador.setOnClickListener( new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Main_Drawer_Empleador.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
