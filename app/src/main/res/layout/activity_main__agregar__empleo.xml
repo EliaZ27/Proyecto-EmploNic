@@ -1,14 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main__register__pymes"
+    android:id="@+id/activity_main__agregar__empleo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.emplonic.brothersapp.emplonic.Main_Register_Pymes">
+    tools:context="com.emplonic.brothersapp.emplonic.Main_Agregar_Empleo">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -26,7 +25,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="Nombre De La Pymes" />
+                android:text="Nombre Pymes O Empleador" />
 
 
             <EditText
@@ -36,60 +35,13 @@
                 android:layout_marginTop="5dp"
                 android:singleLine="true"
                 android:inputType="textEmailAddress"
-                android:id="@+id/nombrePymes"/>
+                android:id="@+id/Nombre"/>
 
             <TextView
                 android:layout_marginTop="10dp"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="Dirrecion" />
-
-
-            <EditText
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:layout_marginTop="5dp"
-                android:singleLine="true"
-                android:id="@+id/Dirrecion"/>
-
-            <TextView
-                android:layout_marginTop="10dp"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="E-Mail De La Pymes" />
-
-
-            <EditText
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:layout_marginTop="5dp"
-                android:singleLine="true"
-                android:inputType="textEmailAddress"
-                android:id="@+id/emailPymes"/>
-
-
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="Password"/>
-
-            <EditText
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:password="true"
-                android:singleLine="true"
-                android:id="@+id/pass"/>
-
-
-
-            <TextView
-                android:layout_marginTop="10dp"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="Categoria Pymes" />
+                android:text="Empleo" />
 
 
             <Spinner
@@ -99,14 +51,77 @@
                 android:layout_marginTop="5dp"
                 android:singleLine="true"
                 android:inputType="textEmailAddress"
-                android:id="@+id/Categoria"/>
+                android:id="@+id/Empleo"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Tipo De Contrato" />
+
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:id="@+id/TipoCont"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Direccion" />
+
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:id="@+id/Direccion"/>
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Sueldo"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:password="true"
+                android:singleLine="true"
+                android:id="@+id/Sueldo"/>
+
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Requisitos" />
+
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:id="@+id/Requisitos"/>
 
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:id="@+id/btnLogin"
-                android:text="Registrate"/>
+                android:text="Agregar Empleo"/>
 
         </LinearLayout>
 
@@ -114,3 +129,4 @@
 
 
 </RelativeLayout>
+

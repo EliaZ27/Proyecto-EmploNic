@@ -25,7 +25,8 @@
         <activity android:name=".Main_Curriculum" />
         <activity android:name=".Main_Cuentas" />
         <activity android:name=".Main_Register_Pymes" />
-        <activity android:name=".Main_Register_Empleador"></activity>
+        <activity android:name=".Main_Register_Empleador" />
+        <activity android:name=".Main_Agregar_Empleo"></activity>
     </application>
 
 </manifest>

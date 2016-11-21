@@ -1,4 +1,41 @@
 <resources>
     <string name="app_name">EmploNic</string>
     <string name="title_activity_main2">Main2Activity</string>
+
+    <string-array name="Empleos">
+        <item>Carrpintero</item>
+        <item>Albañil</item>
+        <item>Costurero/a</item>
+        <item>Bisutero/a</item>
+        <item>Afanadora</item>
+        <item>Cocinera</item>
+        <item>Otros</item>
+    </string-array>
+
+    <string-array name="Pymes">
+        <item>Carrpinteria</item>
+        <item>Albañileria</item>
+        <item>Costureria</item>
+        <item>Bisuteria</item>
+        <item>Gnaaderia Y Agricultora</item>
+        <item>Comideria</item>
+        <item>Otros</item>
+    </string-array>
+
+    <string-array name="Contarto">
+        <item>Tiempo Conmpleto</item>
+        <item>Medio Tiempo</item>
+        <item>Permanente</item>
+        <item>Honorarios</item>
+    </string-array>
+
+        <string name="girl_ipsum">
+        Morbi posuere lorem nec elit dapibus, vitae accumsan mauris pellentesque.
+        Vestibulum a lobortis mi. Vestibulum lacinia molestie semper. Pellentesque
+        ultrices arcu lacus, interdum mollis nibh convallis ut. Aliquam sagittis
+        sem a lacus gravida, eu accumsan purus volutpat. Donec tempus, est id
+        tristique consectetur, lacus ligula dignissim turpis, cursus commodo turpis
+        libero in purus. Phasellus tempus gravida tempor.
+    </string>
+
 </resources>

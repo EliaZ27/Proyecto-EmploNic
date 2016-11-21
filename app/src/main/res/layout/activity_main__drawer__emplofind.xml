@@ -36,4 +36,32 @@
         app:headerLayout="@layout/drawer_header2">
     </android.support.design.widget.NavigationView>
 
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/card_margin">
+
+        <LinearLayout
+            style="@style/Widget.CardContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--Etiqueta Perfil -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Perfil"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/girl_ipsum"
+                android:id="@+id/textView"
+                android:layout_weight="1" />
+            <!--Texto de ejemplo-->
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
 </android.support.v4.widget.DrawerLayout>
