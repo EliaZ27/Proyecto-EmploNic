@@ -46,12 +46,12 @@ public class Main_Drawer_Pymes extends AppCompatActivity
                 startActivity(opc1);
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
-            case R.id.dOption2:
+            case R.id.dOpt_Buscar:
                 Intent opc2 = new Intent(Main_Drawer_Pymes.this, Main_buscar.class);
                 startActivity(opc2);
                 return true;
-            case R.id.dOption3:
-                Intent opc3 = new Intent(Main_Drawer_Pymes.this, Main_Dt_Personales.class);
+            case R.id.dOpt_PublicrEmpleo:
+                Intent opc3 = new Intent(Main_Drawer_Pymes.this, Main_Agregar_Empleo.class);
                 startActivity(opc3);
                 return true;
             case R.id.dOption4:

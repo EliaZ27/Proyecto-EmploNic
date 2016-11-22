@@ -29,6 +29,12 @@
         <item>Honorarios</item>
     </string-array>
 
+
+    <string-array name="Sexo">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+
         <string name="girl_ipsum">
         Morbi posuere lorem nec elit dapibus, vitae accumsan mauris pellentesque.
         Vestibulum a lobortis mi. Vestibulum lacinia molestie semper. Pellentesque

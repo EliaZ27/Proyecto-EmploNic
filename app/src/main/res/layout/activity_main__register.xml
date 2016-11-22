@@ -12,7 +12,10 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -53,6 +56,21 @@
                 android:singleLine="true"
                 android:inputType="textEmailAddress"
                 android:id="@+id/apellido"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Sexo" />
+
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:id="@+id/Sexo"/>
 
             <TextView
                 android:layout_marginTop="10dp"
