@@ -9,9 +9,14 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main_Drawer_Emplofind extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -23,10 +28,37 @@ public class Main_Drawer_Emplofind extends AppCompatActivity
     NavigationView navigationView;
     ActionBarDrawerToggle actionBarDrawerToggle;
 
+    private RecyclerView recycler;
+    private RecyclerView.Adapter adapter;
+    private RecyclerView.LayoutManager lManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main__drawer__emplofind);
+
+        // Inicializar Animes
+        List<Empleo> items = new ArrayList<>();
+
+        items.add(new Empleo(R.drawable.imagen, "Albañil","Nesecito Albañil Para una Pequeña Contruccion, El Pago Lo Veremos Juntos Llamar Al 88776499"));
+        items.add(new Empleo(R.drawable.imagen, "Death Note","Hola"));
+        items.add(new Empleo(R.drawable.imagen, "Fate Stay Night","Hola"));
+        items.add(new Empleo(R.drawable.imagen, "Welcome to the NHK", "Hola"));
+        items.add(new Empleo(R.drawable.imagen, "Suzumiya Haruhi", "Hola"));
+
+        // Obtener el Recycler
+        recycler = (RecyclerView) findViewById(R.id.reciclador);
+        recycler.setHasFixedSize(true);
+
+        // Usar un administrador para LinearLayout
+        lManager = new LinearLayoutManager(this);
+        recycler.setLayoutManager(lManager);
+
+        // Crear un nuevo adaptador
+        adapter = new EmpleoAdapter(items);
+        recycler.setAdapter(adapter);
+
+
         toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
@@ -36,6 +68,7 @@ public class Main_Drawer_Emplofind extends AppCompatActivity
                 new ActionBarDrawerToggle(this, drawerLayout,toolbar, R.string.app_name,R.string.bottom_sheet_behavior);
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
+
     }
 
 
