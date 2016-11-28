@@ -51,7 +51,7 @@
                 android:layout_marginBottom="20dp"
                 android:layout_marginTop="5dp"
                 android:singleLine="true"
-                android:id="@+id/Dirrecion"/>
+                android:id="@+id/Dirrecion1"/>
 
             <TextView
                 android:layout_marginTop="10dp"
@@ -81,7 +81,7 @@
                 android:layout_marginTop="5dp"
                 android:password="true"
                 android:singleLine="true"
-                android:id="@+id/pass"/>
+                android:id="@+id/pass1"/>
 
 
 
@@ -92,21 +92,20 @@
                 android:text="Categoria Pymes" />
 
 
-            <Spinner
+            <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:layout_marginTop="5dp"
                 android:singleLine="true"
-                android:inputType="textEmailAddress"
                 android:id="@+id/Categoria"/>
 
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:id="@+id/btnLogin"
-                android:text="Registrate"/>
+                android:id="@+id/btnRegistratePymes"
+                android:text="Registrate Pymes"/>
 
         </LinearLayout>
 

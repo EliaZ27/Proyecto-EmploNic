@@ -12,7 +12,10 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,7 +39,7 @@
                 android:layout_marginTop="5dp"
                 android:singleLine="true"
                 android:inputType="textEmailAddress"
-                android:id="@+id/nombrePymes"/>
+                android:id="@+id/nombreempleador"/>
 
             <TextView
                 android:layout_marginTop="10dp"
@@ -51,7 +54,7 @@
                 android:layout_marginBottom="20dp"
                 android:layout_marginTop="5dp"
                 android:singleLine="true"
-                android:id="@+id/Dirrecion"/>
+                android:id="@+id/DirrecionEmpleador"/>
 
             <TextView
                 android:layout_marginTop="10dp"
@@ -81,7 +84,7 @@
                 android:layout_marginTop="5dp"
                 android:password="true"
                 android:singleLine="true"
-                android:id="@+id/pass"/>
+                android:id="@+id/passemepleador"/>
 
 
             <TextView
@@ -94,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:singleLine="true"
-                android:id="@+id/numero"/>
+                android:id="@+id/numeroempleador"/>
 
 
 
@@ -118,7 +121,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:id="@+id/btnLogin"
+                android:id="@+id/btnregistrateempleador"
                 android:text="Registrate"/>
 
         </LinearLayout>

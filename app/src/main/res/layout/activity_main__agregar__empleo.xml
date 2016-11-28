@@ -38,7 +38,7 @@
                 android:layout_marginTop="5dp"
                 android:singleLine="true"
                 android:inputType="textEmailAddress"
-                android:id="@+id/Nombre"/>
+                android:id="@+id/NombrePoE"/>
 
             <TextView
                 android:layout_marginTop="10dp"
@@ -47,14 +47,14 @@
                 android:text="Empleo" />
 
 
-            <Spinner
+            <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:layout_marginTop="5dp"
                 android:singleLine="true"
                 android:inputType="textEmailAddress"
-                android:id="@+id/Empleo"/>
+                android:id="@+id/Empleo1"/>
 
             <TextView
                 android:layout_marginTop="10dp"
@@ -63,14 +63,14 @@
                 android:text="Tipo De Contrato" />
 
 
-            <Spinner
+            <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:layout_marginTop="5dp"
                 android:singleLine="true"
                 android:inputType="textEmailAddress"
-                android:id="@+id/TipoCont"/>
+                android:id="@+id/TipoContrato"/>
 
             <TextView
                 android:layout_marginTop="10dp"
@@ -86,7 +86,7 @@
                 android:layout_marginTop="5dp"
                 android:singleLine="true"
                 android:inputType="textEmailAddress"
-                android:id="@+id/Direccion"/>
+                android:id="@+id/Direccion1"/>
 
 
             <TextView
@@ -123,7 +123,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:id="@+id/btnLogin"
+                android:id="@+id/btnAgregarEmpleo"
                 android:text="Agregar Empleo"/>
 
         </LinearLayout>
