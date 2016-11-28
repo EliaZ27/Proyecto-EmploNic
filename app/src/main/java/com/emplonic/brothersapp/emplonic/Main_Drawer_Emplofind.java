@@ -41,10 +41,10 @@ public class Main_Drawer_Emplofind extends AppCompatActivity
         List<Empleo> items = new ArrayList<>();
 
         items.add(new Empleo(R.drawable.imagen, "Albañil","Nesecito Albañil Para una Pequeña Contruccion, El Pago Lo Veremos Juntos Llamar Al 88776499"));
-        items.add(new Empleo(R.drawable.imagen, "Death Note","Hola"));
-        items.add(new Empleo(R.drawable.imagen, "Fate Stay Night","Hola"));
-        items.add(new Empleo(R.drawable.imagen, "Welcome to the NHK", "Hola"));
-        items.add(new Empleo(R.drawable.imagen, "Suzumiya Haruhi", "Hola"));
+        items.add(new Empleo(R.drawable.imagen, "Bisutera","Necesito Bisutera Para Mi Pymes Mi Numero :88998797 O Dirrecion: Km 13 y medio Carretera Norte"));
+        items.add(new Empleo(R.drawable.imagen, "Carpitero","Nesito Carpintero Para Reparar Una Comoda Mi Numero:87876677"));
+        items.add(new Empleo(R.drawable.imagen, "Costurera", "Necesito Costurera Para Realizar un Vestido De Novia Numero: 86879927"));
+        items.add(new Empleo(R.drawable.imagen, "Otro", "Necesito Conductor Por Dos Dias Numero: 87902369"));
 
         // Obtener el Recycler
         recycler = (RecyclerView) findViewById(R.id.reciclador);
