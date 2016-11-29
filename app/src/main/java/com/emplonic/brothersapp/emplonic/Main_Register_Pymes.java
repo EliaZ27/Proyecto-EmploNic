@@ -34,13 +34,13 @@ public class Main_Register_Pymes extends AppCompatActivity {
         final String categoria = etCategoria.getText().toString();
 
 
-        final PymesHelper helper = new PymesHelper(this);
+        final BaseHelper helper = new BaseHelper(this);
         mbtn = (Button)findViewById(R.id.btnRegistratePymes);
         mbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                helper.insertarRegistro(nombre, dirrecion, email, pass, categoria);
-                helper.listarRegistros();
+                helper.insertarRegistroPymes(nombre, dirrecion, email, pass, categoria);
+                helper.listarRegistrosPymes();
             }
         });
 

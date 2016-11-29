@@ -41,13 +41,15 @@ public class Main_Agregar_Empleo extends AppCompatActivity {
         final String direccion = etdireccion.getText().toString();
         final String sueldo = etsueldo.getText().toString();
         final String requisitos = etrequisitos.getText().toString();
-        final EmpleoHelper helper = new EmpleoHelper(this);
+
+
+        final BaseHelper helper = new BaseHelper(this);
         mbtn = (Button) findViewById(R.id.btnAgregarEmpleo);
         mbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                helper.insertarRegistro(nombre, empleo, tipocontrato, direccion, sueldo, requisitos);
-                helper.listarRegistros();
+                helper.insertarRegistroEmpleo(nombre, empleo, tipocontrato, direccion, sueldo, requisitos);
+                helper.listarRegistrosEmpleo();
             }
         });
     }

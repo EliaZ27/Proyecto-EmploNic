@@ -26,13 +26,13 @@ public class Main_Register_Empleador extends AppCompatActivity {
         final String pass = etPass.getText().toString();
         final String descripccion = etDescripccion.getText().toString();
 
-        final EmpleadorHelper helper = new EmpleadorHelper(this);
+        final BaseHelper helper = new BaseHelper(this);
         mbtn = (Button)findViewById(R.id.btnregistrateempleador);
         mbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                helper.insertarRegistro(nombre, dirrecion, email, pass, descripccion);
-                helper.listarRegistros();
+                helper.insertarRegistroEmpleador(nombre, dirrecion, email, pass, descripccion);
+                helper.listarRegistrosEmpleador();
             }
         });
 

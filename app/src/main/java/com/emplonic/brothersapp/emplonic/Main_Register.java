@@ -3,17 +3,18 @@ package com.emplonic.brothersapp.emplonic;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
-import static com.emplonic.brothersapp.emplonic.R.id.Nombre;
+
 
 public class Main_Register extends AppCompatActivity {
 
-    public static final int FORM_KEY = 1;
+    public static final int FORM_KEY = 2;
 
     public static final String NOMBRE_KEY = "nombre";
     public static final String APELLIDO_KEY = "apellido";
@@ -62,13 +63,18 @@ public class Main_Register extends AppCompatActivity {
         final String profeccion = etProfeccion.getText().toString();
 
         //Base De Datos
-        final EmploFindHelper helper = new EmploFindHelper(this);
+        final BaseHelper helper = new BaseHelper(this);
         mbtn = (Button) findViewById(R.id.btnRegistrateEmplofind);
         mbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                helper.insertarRegistro(nombre, apellido, sexo, email, pass, desempeña, dirrecion, profeccion);
-                helper.listarRegistros();
+                boolean result=
+                helper.insertarRegistroEmplofind(nombre, apellido, sexo, email, pass, desempeña, dirrecion, profeccion);
+                if(result){
+                    Log.d("Se Incerto", "Bien");
+                    helper.listarRegistrosEmplofind();
+                }
+
             }
         });
 
