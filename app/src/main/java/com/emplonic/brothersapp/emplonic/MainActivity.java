@@ -22,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        BaseHelper helper = new BaseHelper(this);
+
+
         mbtn = (Button) findViewById(R.id.btnLogin);
         btnRegistrate = (Button) findViewById(R.id.btnRegistrate);
 
@@ -29,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
         btnempleador = (Button) findViewById(R.id.btnempleador);
 
         mbtn.setOnClickListener(new View.OnClickListener() {
-            public String TAG;
 
             @Override
             public void onClick(View v) {

@@ -12,7 +12,7 @@
             android:title="Buscar" />
 
         <item
-            android:id="@+id/dOpt_PublicrEmpleo"
+            android:id="@+id/dOpt_PublicarEmpleo"
             android:icon="@drawable/ic_action_name"
             android:title="Agregar Empleo" />
 

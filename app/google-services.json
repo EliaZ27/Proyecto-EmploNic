@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "436385910278",
+    "firebase_url": "https://emplonic1.firebaseio.com",
+    "project_id": "emplonic1",
+    "storage_bucket": "emplonic1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436385910278:android:694ce39a9153b69a",
+        "android_client_info": {
+          "package_name": "com.emplonic.brothersapp.emplonic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436385910278-co2m4ehm7rqmcn2sjn342tho4veftvo3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeYmq4syIGmd6uFieli_TghIVomHbwW4Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

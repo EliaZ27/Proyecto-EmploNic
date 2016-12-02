@@ -1,5 +1,6 @@
 package com.emplonic.brothersapp.emplonic;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
@@ -75,14 +76,17 @@ public class Main_Drawer_Empleador extends AppCompatActivity implements Navigati
         Log.d(TAG, "onOptionsItemSelected: " + item.getItemId());
         switch (item.getItemId()){
             case R.id.dOpt_perfil:
-                Snackbar.make(drawerLayout,"Option 1", Snackbar.LENGTH_LONG).show();
+                Intent opc1 = new Intent(Main_Drawer_Empleador.this, Main_perfil.class);
+                startActivity(opc1);
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
             case R.id.dOpt_Buscar:
-                Snackbar.make(drawerLayout,"Option 2", Snackbar.LENGTH_LONG).show();
+                Intent opc2 = new Intent(Main_Drawer_Empleador.this, Main_buscar.class);
+                startActivity(opc2);
                 return true;
-            case R.id.dOpt_PublicrEmpleo:
-                Snackbar.make(drawerLayout,"Option 3", Snackbar.LENGTH_LONG).show();
+            case R.id.dOpt_PublicarEmpleo:
+                Intent opc3 = new Intent(Main_Drawer_Empleador.this, Main_Agregar_Empleo.class);
+                startActivity(opc3);
                 return true;
             case R.id.dOpt_DatosP:
                 Snackbar.make(drawerLayout,"Option 4", Snackbar.LENGTH_LONG).show();

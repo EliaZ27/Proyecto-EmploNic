@@ -2,6 +2,7 @@ package com.emplonic.brothersapp.emplonic;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -31,8 +32,12 @@ public class Main_Register_Empleador extends AppCompatActivity {
         mbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                helper.insertarRegistroEmpleador(nombre, dirrecion, email, pass, descripccion);
-                helper.listarRegistrosEmpleador();
+                boolean result=
+                        helper.insertarRegistroEmpleador(nombre, dirrecion, email, pass, descripccion);
+                if(result) {
+                    Log.d("Se Incerto", "Bien");
+                    helper.listarRegistrosEmpleador();
+                }
             }
         });
 

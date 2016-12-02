@@ -14,7 +14,9 @@ import android.widget.Spinner;
 
 public class Main_Register extends AppCompatActivity {
 
-    public static final int FORM_KEY = 2;
+
+
+    public static final int FORM_KEY = 1;
 
     public static final String NOMBRE_KEY = "nombre";
     public static final String APELLIDO_KEY = "apellido";

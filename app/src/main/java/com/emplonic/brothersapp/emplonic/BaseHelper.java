@@ -13,7 +13,7 @@ import android.util.Log;
  */
 
 public class BaseHelper extends SQLiteOpenHelper {
-    private static final String DATABASE_NAME="EmploNic.db";
+    private static final String DATABASE_NAME="EmploNic1.db";
     private static final int DATABASE_VERSION=1;
     private static final String TEXT_TYPE="TEXT";
     private static final String INTEGER_TYPE="INTEGER";
@@ -58,6 +58,10 @@ public class BaseHelper extends SQLiteOpenHelper {
                     + ContratoEmpleador.PASS +" "+ TEXT_TYPE + ","
                     + ContratoEmpleador.DESCRPICCION +" "+ TEXT_TYPE +")";
 
+    private static final String SQL_DROP_DATABASE=
+            "DROP DATABASE IF EXISTS" + DATABASE_NAME;
+
+
     public BaseHelper(Context context){
         super(context,DATABASE_NAME,null, DATABASE_VERSION);
     }
@@ -68,10 +72,14 @@ public class BaseHelper extends SQLiteOpenHelper {
         db.execSQL(SQL_CREATE_PYMES);
         db.execSQL(SQL_CREATE_EMPLEO);
         db.execSQL(SQL_CREATE_EMPLEADOR);
+        //db.execSQL(SQL_DROP_DATABASE);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        //db.execSQL(SQL_DROP_DATABASE);
+        //onCreate(db);
+
 
     }
 
@@ -98,8 +106,10 @@ public class BaseHelper extends SQLiteOpenHelper {
         values.put(ContratoPymes.EMAIL,Email);
         values.put(ContratoPymes.PASS,Pass);
         values.put(ContratoPymes.CATEGORIA,Categoria);
-        Long result = this.getWritableDatabase().insert(ContratoPymes.TABLA, null,values);
-        return  result != -1;
+
+        Long result1 = this.getWritableDatabase().insert(ContratoPymes.TABLA, null,values);
+
+        return  result1 != -1;
     }
 
     public boolean insertarRegistroEmpleo (String Nombre, String Empleo, String tipocontrato, String Direccion, String Sueldo, String Requisitos){
@@ -110,8 +120,10 @@ public class BaseHelper extends SQLiteOpenHelper {
         values.put(ContratoEmpleo.DIRRECION,Direccion);
         values.put(ContratoEmpleo.SUELDO,Sueldo);
         values.put(ContratoEmpleo.REQUISITOS,Requisitos);
-        Long result = this.getWritableDatabase().insert(ContratoEmpleo.TABLA, null,values);
-        return  result != -1;
+
+        Long result2 = this.getWritableDatabase().insert(ContratoEmpleo.TABLA, null,values);
+
+        return  result2 != -1;
     }
 
     public boolean insertarRegistroEmpleador (String Nombre, String Direccion, String Email, String Pass, String Descripccion){
@@ -121,8 +133,10 @@ public class BaseHelper extends SQLiteOpenHelper {
         values.put(ContratoEmpleador.EMAIL,Email);
         values.put(ContratoEmpleador.PASS,Pass);
         values.put(ContratoEmpleador.DESCRPICCION,Descripccion);
-        Long result = this.getWritableDatabase().insert(ContratoEmpleador.TABLA, null,values);
-        return  result != -1;
+
+        Long result3 = this.getWritableDatabase().insert(ContratoEmpleador.TABLA, null,values);
+
+        return  result3 != -1;
     }
 
     public void listarRegistrosEmplofind(){
@@ -190,6 +204,9 @@ public class BaseHelper extends SQLiteOpenHelper {
     }
 
 
+    public static void removeDatabase(Context context) {
+        context.deleteDatabase(DATABASE_NAME);
+    }
 
     private class ContratoEmplofind implements BaseColumns {
 
